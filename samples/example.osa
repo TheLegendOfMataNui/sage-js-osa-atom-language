@@ -1,0 +1,25 @@
+; Format: Example Assembly
+
+begin example
+	pi 3.14159265
+end ; example
+
+begin family "Wayne" ;
+	status "Rich"
+
+	begin parent "Father"
+		name "Thomas", "Wayne"
+	end ; parent
+
+	begin parent "Mother"
+		name "Martha", "Wayne"
+	end ; parent
+
+	begin child 1
+		name "Bruce", "Wayne" ; Batman
+
+		begin enemy
+			name "The", "Joker"
+		end ; enemy
+	end ; child
+end ; family

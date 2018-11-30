@@ -1,0 +1,22 @@
+name: 'SAGE-JS OSA'
+scopeName: 'sage-js.osa'
+type: 'tree-sitter'
+parser: 'sage-js-osa-tree-sitter'
+fileTypes: [
+	'osa',
+	'osas'
+]
+comments:
+	start: '; '
+folds: [
+	{
+		type: 'block'
+	}
+]
+scopes:
+	'BEGIN, END': 'keyword.control'
+	'NUMBER': 'constant.numeric'
+	'STRING': 'string.quoted'
+	'COMMA': 'meta.delimiter.comma'
+	'comment': 'comment.line'
+	'identifier': 'entity.name.function'
