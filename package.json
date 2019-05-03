@@ -4,6 +4,9 @@
 	"version": "1.0.0",
 	"description": "SAGE-JS OSA Atom Grammar",
 	"keywords": [],
+	"scripts": {
+		"upgrade-interactive": "npm-check --update"
+	},
 	"repository": "https://github.com/TheLegendOfMataNui/sage-js-osa-atom-language",
 	"bugs": "https://github.com/TheLegendOfMataNui/sage-js-osa-atom-language/issues",
 	"author": "JrMasterModelBuilder",
@@ -13,10 +16,11 @@
 		"atom": ">=1.0.0 <2.0.0"
 	},
 	"dependencies": {
-		"sage-js-osa-tree-sitter": "^1.0.0"
+		"sage-js-osa-tree-sitter": "^1.0.1"
 	},
 	"devDependencies": {
-		"electron": "^3.0.10",
-		"electron-rebuild": "^1.8.2"
+		"electron": "^5.0.0",
+		"electron-rebuild": "^1.8.4",
+		"npm-check": "^5.9.0"
 	}
 }
